@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Read {{ title }}{% endblock %}
+
+{% block body %}
+{# yay! #}
+<h1>{{ title }}</h1>
+
+<div>
+    <p>
+     Bacon ipsum dolor amet filet mignon picanha kielbasa jowl hamburger shankle biltong chicken turkey pastrami cupim
+    </p>
+
+    <p>
+     Kielbasa pork belly meatball cupim burgdoggen chuck turkey buffalo ground round leberkas cow shank short loin bacon alcatra. Leberkas short loin boudin swine, ham hock bresaola turducken tail pastrami picanha pancetta andouille rump landjaeger bacon. Pastrami swine rump meatball filet mignon turkey alcatra. Picanha filet mignon ground round tongue ham hock ball tip tri-tip, prosciutto leberkas kielbasa short loin short ribs drumstick. Flank pig kielbasa short loin jerky ham hock turducken prosciutto t-bone salami pork jowl.
+    </p>
+
+    <p>
+     Lorem impusn 
+    </p>
+
+    <p>
+     Lorem impusn 
+    </p>
+</div>
+
+<h2>Comments ({{ comments|length }})</h2>
+
+<ul>
+     {% for comment in comments %}
+        <li>{{ comment }}</li>
+     {% endfor %}
+</ul>
+{% endblock %}
+
