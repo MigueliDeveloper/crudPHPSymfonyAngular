@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88cdc87e6f8db3ac9ce965af1a134b83",
+    "content-hash": "dc10363b2886e26b4c2ec77c2de86ae5",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2283,6 +2283,56 @@
     ],
     "packages-dev": [
         {
+            "name": "easycorp/easy-log-handler",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/EasyCorp/easy-log-handler.git",
+                "reference": "5f95717248d20684f88cfb878d8bf3d78aadcbba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/EasyCorp/easy-log-handler/zipball/5f95717248d20684f88cfb878d8bf3d78aadcbba",
+                "reference": "5f95717248d20684f88cfb878d8bf3d78aadcbba",
+                "shasum": ""
+            },
+            "require": {
+                "monolog/monolog": "~1.6",
+                "php": ">=5.3.0",
+                "symfony/yaml": "~2.3|~3.0|~4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "EasyCorp\\EasyLog\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Javier Eguiluz",
+                    "email": "javiereguiluz@gmail.com"
+                },
+                {
+                    "name": "Project Contributors",
+                    "homepage": "https://github.com/EasyCorp/easy-log-handler"
+                }
+            ],
+            "description": "A handler for Monolog that optimizes log messages to be processed by humans instead of software. Improve your productivity with logs that are easy to understand.",
+            "homepage": "https://github.com/EasyCorp/easy-log-handler",
+            "keywords": [
+                "easy",
+                "log",
+                "logging",
+                "monolog",
+                "productivity"
+            ],
+            "time": "2018-07-27T15:41:37+00:00"
+        },
+        {
             "name": "monolog/monolog",
             "version": "1.25.1",
             "source": {
@@ -2359,6 +2409,71 @@
                 "psr-3"
             ],
             "time": "2019-09-06T13:49:17+00:00"
+        },
+        {
+            "name": "symfony/debug-bundle",
+            "version": "v3.4.32",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug-bundle.git",
+                "reference": "e4330e23ebac6a8d7a9ac53914ab5820de5540f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug-bundle/zipball/e4330e23ebac6a8d7a9ac53914ab5820de5540f0",
+                "reference": "e4330e23ebac6a8d7a9ac53914ab5820de5540f0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": "^5.5.9|>=7.0.8",
+                "symfony/http-kernel": "~2.8|~3.0|~4.0",
+                "symfony/twig-bridge": "~2.8|~3.0|~4.0",
+                "symfony/var-dumper": "~3.4|~4.0"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<3.4"
+            },
+            "require-dev": {
+                "symfony/config": "~3.3|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/web-profiler-bundle": "~2.8|~3.0|~4.0"
+            },
+            "suggest": {
+                "symfony/config": "For service container configuration",
+                "symfony/dependency-injection": "For using as a service from the container"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Bundle\\DebugBundle\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony DebugBundle",
+            "homepage": "https://symfony.com",
+            "time": "2019-07-19T08:16:37+00:00"
         },
         {
             "name": "symfony/monolog-bridge",
