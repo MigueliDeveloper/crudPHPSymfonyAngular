@@ -80,6 +80,9 @@
             "./config/packages/security_checker.yaml"
         ]
     },
+    "symfony/asset": {
+        "version": "v3.4.32"
+    },
     "symfony/cache": {
         "version": "v3.4.31"
     },

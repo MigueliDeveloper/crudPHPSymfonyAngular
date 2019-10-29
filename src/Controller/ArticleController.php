@@ -9,16 +9,16 @@ use Symfony\Component\HttpFoundation\Response;
 class ArticleController extends AbstractController {
 
     /**
-     * @Route("/")
+     * @Route("/", name="app_homepage")
      */
 
     public function homepage() {
 
-        return new Response('OMG! My first page already! Wooo!');
+        return $this->render('article/hommepage.html.twig');
     }
 
     /**
-     * @Route("/noticias/{slug}")
+     * @Route("/noticias/{slug}", name="article_show")
      */
 
     public function show($slug) {
